@@ -40,3 +40,64 @@
 .read-the-docs {
   color: #888;
 }
+
+/* App Layout */
+.App {
+  min-height: 100vh;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.app-main {
+  display: flex;
+  gap: 30px;
+}
+
+.left-panel {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.right-panel {
+  flex: 1;
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.light-mode .app-header {
+  background-color: #e9ecef;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.dark-mode .app-header {
+  background-color: #343a40;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-main {
+    flex-direction: column;
+  }
+  
+  .left-panel {
+    width: 100%;
+  }
+}
